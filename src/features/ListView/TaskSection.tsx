@@ -11,11 +11,10 @@ import {
   Dropdown,
   GetProp,
   MenuProps,
-  message,
   Space,
   Spin,
 } from "antd";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { H2 } from "../../components/common/StyledComponent/Typography";
 import TaskForm from "./TaskForm";
@@ -25,7 +24,6 @@ import { TaskProps } from "../../context/TaskContext";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { deleteTask, updateTask } from "../../service/taskService";
 import { formatTimestamp } from "../../lib/utils";
-import { useTask } from "../../hooks/useTask";
 const { Panel } = Collapse;
 
 const StyledCollapse = styled(Collapse)<{ bgcolor: string }>`
