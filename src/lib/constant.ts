@@ -1,0 +1,1 @@
+export const STATUS_OPTIONS = ["TO-DO", "IN-PROGRESS", "COMPLETED"];
